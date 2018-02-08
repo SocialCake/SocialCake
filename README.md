@@ -1,7 +1,16 @@
 # SocialCake
-SocialCake code for NEM hackathon
 
-This project was bootstraped with [React Firebase Starter][rfs] by [Kriasoft][kriasoft].
+### What is SocialCake
+
+SocialCake allows content creators of all kinds to sell digital goods directly to their audience. Artists, musicians, writers, and more can sell digital content simply by sharing a message.
+
+### How it Works
+
+Using SocialCake is easy. First, users can upload a file and specify how much the file costs, what address should receive payments, and how many Mosaics should be created for the file in question (or unlimited). Then, the file will be uploaded to SocialCake’s Firebase database (in the future we plan to decentralize this by using a blockchain storage platform) and a Mosaic is created in the “socialcake” namespace.
+
+This Mosaic is very important because it’s description includes the file name, last modified date, the file’s MD5 and SHA1 hashes, and a levy to credit the user in the event of a sale. The file hashes in the description are especially critical because they serve as proof of ownership for the file in question, and can be used to assert the integrity of the file they download at any time. The app then displays a unique ID that can be shared to purchase the file.
+
+When a buyer comes along to purchase the file, they simply send a payment of the specified amount to SocialCake’s NEM address and include the unique ID in the message body. In return, the buyer will automatically receive a Mosaic with an encrypted message containing the download link for their file. The levy on the Mosaic will deduct the fees from SocialCake and fund the original uploader. This is a great way to guarantee that the profits from the transaction go directly to the creator.  
 
 ### Screenshots
 
@@ -10,6 +19,8 @@ This project was bootstraped with [React Firebase Starter][rfs] by [Kriasoft][kr
 <p align='center'><img src='https://i.imgur.com/jSWHimx.jpg' width='800' alt='SocialCake share'></p>
 
 ### Tech Stack
+
+This project was bootstraped with [React Firebase Starter][rfs] by [Kriasoft][kriasoft].
 
 * [Create React App][cra] for development and test infrastructure (see [user guide][cradocs])
 * [Material UI][mui] to reduce development time by integrating Google's [Material Design][material]
