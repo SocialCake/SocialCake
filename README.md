@@ -3,6 +3,12 @@ SocialCake code for NEM hackathon
 
 This project was bootstraped with [React Firebase Starter][rfs] by [Kriasoft][kriasoft].
 
+### Screenshots
+
+<p align='center'><img src='https://i.imgur.com/bOFdkvl.jpg' width='800' alt='SocialCake upload'></p><br />
+
+<p align='center'><img src='https://i.imgur.com/jSWHimx.jpg' width='800' alt='SocialCake share'></p>
+
 ### Tech Stack
 
 * [Create React App][cra] for development and test infrastructure (see [user guide][cradocs])
@@ -18,6 +24,7 @@ This project was bootstraped with [React Firebase Starter][rfs] by [Kriasoft][kr
 ├── public/                        # Static files such as favicon.ico etc.
 ├── src/                           # Application source code
 │   ├── components/                # Shared React components
+│   ├── nem/                       # Nem utilities and services
 │   ├── routes/                    # Components for pages/screens + routing information
 │   ├── auth.js                    # Authentication manager
 │   ├── history.js                 # Client-side navigation manager
@@ -70,7 +77,7 @@ $ firebase deploy                 # Deploy to Firebase
 ### License
 
 Copyright © 2018-present SocialCake. This source code is licensed under the MIT license found in
-the [LICENSE.txt](https://github.com/amrue/SocialCake/blob/master/LICENSE.txt) file.
+the [LICENSE.txt](https://github.com/SocialCake/SocialCake/blob/master/LICENSE.txt) file.
 
 ---
 
